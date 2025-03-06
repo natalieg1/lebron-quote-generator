@@ -9,6 +9,14 @@ import os
 import sys
 import argparse
 from datetime import datetime
+import colorama
+from termcolor import colored
+from pyfiglet import Figlet
+from tqdm import tqdm
+import time
+
+# Initialize colorama
+colorama.init()
 
 # ANSI color codes
 COLORS = {
@@ -59,6 +67,16 @@ def get_random_fortune(fortunes):
 def print_fortune_cookie(fortune, use_color=True):
     """Print a fortune cookie with ASCII art."""
     
+    # Create a figlet font object
+    fig = Figlet(font='small')
+    
+    # Create loading effect
+    for i in tqdm(range(10), desc="Breaking cookie", ncols=75):
+        time.sleep(0.1)
+    
+    # Print header
+    header = fig.renderText('Fortune Cookie')
+    
     cookie_top = r"""
     .--.
    /    \
@@ -74,11 +92,14 @@ def print_fortune_cookie(fortune, use_color=True):
 """
     
     if use_color:
-        cookie_color = random.choice(['yellow', 'cyan', 'green', 'purple'])
-        print(f"{COLORS[cookie_color]}{cookie_top}{COLORS['end']}")
-        print(f"{COLORS['bold']}{fortune_text}{COLORS['end']}")
-        print(f"{COLORS[cookie_color]}{cookie_bottom}{COLORS['end']}")
+        # Using termcolor instead of ANSI codes
+        cookie_color = random.choice(['yellow', 'cyan', 'green', 'magenta'])
+        print(colored(header, 'red', attrs=['bold']))
+        print(colored(cookie_top, cookie_color))
+        print(colored(fortune_text, 'white', attrs=['bold']))
+        print(colored(cookie_bottom, cookie_color))
     else:
+        print(header)
         print(cookie_top)
         print(fortune_text)
         print(cookie_bottom)

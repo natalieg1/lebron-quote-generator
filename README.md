@@ -1,23 +1,29 @@
 # Fortune Cookie Simulator 🥠
 
-A simple command-line fortune cookie simulator that generates random fortunes and wisdom.
+A simple command-line fortune cookie simulator that generates random fortunes and wisdom with fancy terminal effects.
 
 ## Features
 
 - Generates random fortune cookie messages
-- Colorful terminal output
+- Colorful terminal output with fancy text
+- Loading animations
 - Easy to customize with your own fortunes
-- No external dependencies
+- Beautiful ASCII art
 
 ## Installation
 
 1. Clone this repository:
    ```
-   git clone https://github.com/natalieg1/fortune-cookie-simulator.git
+   git clone https://github.com/yourusername/fortune-cookie-simulator.git
    cd fortune-cookie-simulator
    ```
 
-2. Make the script executable:
+2. Install required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Make the script executable:
    ```
    chmod +x fortune.py
    ```
