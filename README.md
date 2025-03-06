@@ -12,20 +12,9 @@ A simple command-line fortune cookie simulator that generates random fortunes an
 
 ## Installation
 
-1. Clone this repository:
-   ```
-   git clone https://github.com/yourusername/fortune-cookie-simulator.git
-   cd fortune-cookie-simulator
-   ```
-
-2. Install required dependencies:
+Install required dependencies:
    ```
    pip install -r requirements.txt
-   ```
-
-3. Make the script executable:
-   ```
-   chmod +x fortune.py
    ```
 
 ## Usage
