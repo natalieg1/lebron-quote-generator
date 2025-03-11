@@ -56,17 +56,13 @@ def get_random_quote(quotes):
     return random.choice(quotes)
 
 def print_quote(quote, use_color=True):
-    """Print a quote cookie with ASCII art."""
+    """Print a quote with ASCII art."""
     
     # Create a figlet font object
     fig = Figlet(font='small')
     
-    # Create loading effect
-    for i in tqdm(range(10), desc="Breaking cookie", ncols=75):
-        time.sleep(0.1)
-    
     # Print header
-    header = fig.renderText('quote Cookie')
+    header = fig.renderText('LeBron Quote Generator')
     
     cookie_top = r"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
