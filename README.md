@@ -1,21 +1,20 @@
-# Fortune Cookie Simulator 🥠
+# LeBron Quote Generator 🏀
 
-A simple command-line fortune cookie simulator that generates random fortunes and wisdom with fancy terminal effects.
+A simple command-line LeBron James quote simulator that generates quotes and wisdom with fun terminal imagery.
 
 ## Features
 
-- Generates random fortune cookie messages
+- Generates random LeBron quotes
 - Colorful terminal output with fancy text
-- Loading animations
-- Easy to customize with your own fortunes
+- Easy to customize with your own quotess
 - Beautiful ASCII art
 
 ## Installation
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/fortune-cookie-simulator.git
-   cd fortune-cookie-simulator
+   git clone https://github.com/natalieg1/lebron-quote-generator.git
+   cd lebron-quote-generator
    ```
 
 2. Install required dependencies:
@@ -25,34 +24,30 @@ A simple command-line fortune cookie simulator that generates random fortunes an
 
 3. Make the script executable:
    ```
-   chmod +x fortune.py
+   chmod +x quotes.py
    ```
 
 ## Usage
 
-Run the fortune cookie simulator:
+Run the LeBron quotes generator:
 
 ```
-python fortune.py
+python quotes.py
 ```
 
-For a new fortune, simply run the command again.
+For a new quote, simply run the command again.
 
 ### Options
 
 - `-n` or `--no-color`: Disable colored output
-- `-c` or `--count [number]`: Generate multiple fortunes (default: 1)
+- `-c` or `--count [number]`: Generate multiple quotess (default: 1)
 - `-h` or `--help`: Show help message
 
 Example:
 ```
-python fortune.py -c 3
+python quotes.py -c 3
 ```
 
-## Customizing Fortunes
+## Customizing quotess
 
-To add your own fortunes, edit the `fortunes.txt` file. Each fortune should be on a new line.
-
-## License
-
-MIT
+To add your own quotess, edit the `quotes.txt` file. Each quote should be on a new line.
